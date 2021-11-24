@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+
+  <body>
+    <h1>Formualrio de registro</h1>
+    <fieldset>
+      <legend>DATOS DE INSCRIPCIÓN</legend>
+      <fieldset>
+        <legend>Fecha y hora</legend>
+        <input type="date" name="" id="">
+        <input type="time" name="" id="">
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos personales</legend>
+        <p>Nota: Este es un formulario de ejemplo en el que los datos aquí escritos se trasladan a otra página.</p>
+        <form action="ej5.php" method="post" />
+            <label for="foto">Fotografía:</label>
+            <input type="file" name="" id="foto">
+        <p>
+          <table>
+            <tr>
+              <td>
+                <input type="text" name="nombre1" size="40" maxlength="40" placeholder="PRIMER NOMNBRE" />
+                <input type="text" name="nombre2" size="40" maxlength="40"placeholder="SEGUNDO NOMNBRE" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="apellido1" size="40" maxlength="40" placeholder="PRIMER APELLIDO"/>
+                <input type="text" name="apellido2" size="40" maxlength="40" placeholder="SEGUNDO APELLIDO"/>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="">Tipo Documento Identidad</label>
+                <select>
+                  <option>T.I.</option>
+                  <option>C.C.</option>
+                  <option>C.E.</option>
+                  <option>Otro</option>
+                </select>
+                <label for="">Número</label>
+                <input type="text">
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" min="1" max="99">
+                <br>
+                <fieldset>
+                  <legend>Género</legend>
+                  <input type="radio" name="genero" id="h" value="">Masculino
+                  <input type="radio" name="genero" id="m" value="">Femenino
+                </fieldset>
+                <br>
+                <input type="tel" name="telefono" size="10" placeholder="TELÉFONO">
+                <input type="email" name="email" size="40" placeholder="email@dominio.com" />
+        </p>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Contraseña: <input type="password" name="password" /><br />
+
+              </td>
+            </tr>
+
+          </table>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Domicilio</legend>
+            <label for="domicilio">Dirección:</label>
+            <input type="text" name="calle" id="" placeholder="Calle">
+            <label for="">#</label>
+            <input type="text" name="" id="" size="3">
+            <label for="">-</label>
+            <input type="text" name="" id="" size="3">
+            <!-- <br> -->
+            <tr>
+              <td>
+                <!-- <label for="">Ciudad:</label> -->
+                <select>
+                  <option>Ciudad</option>
+                  <option>Bogotá</option>
+                  <option>Barranquilla</option>
+                  <option>Bucaramanga</option>
+                  <option>Cali</option>
+                  <option>Medellin</option>
+                  <option>Pasto</option>
+                  <option>Tunja</option>
+                  <option>Yopal</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <!-- <label for="">Departamento</label> -->
+                <select>
+                  <option>Departamento</option>
+                  <option>Cundimamarca</option>
+                  <option>Atlántico</option>
+                  <option>Santander</option>
+                  <option>Valle</option>
+                  <option>Antioquia</option>
+                  <option>Nariño</option>
+                  <option>Boyacá</option>
+                  <option>Casanare</option>
+                </select>
+
+              </td>
+            </tr>
+          </fieldset>
+
+<!-- DATOS DE NACMIENTO -->
+          <fieldset>
+            <legend>Datos de nacmiento</legend>
+            <label for="">Día:</label>
+            <input type="number" name="" id="" size="1" maxlength="2" min="1" max="31">
+            <label for=""Mes></label>
+            <input type="month" name="" id="">
+            <!-- <br> -->
+            <label for="ciudad-nace">Ciudad:</label>
+            <input type="text" name="" id="ciudad-nace">
+            <label for="pais-nace"></label>
+            <select>
+              <option>País</option>
+              <option>Colombia</option>
+              <option>Argentina</option>
+              <option>Bolivia</option>
+              <option>Chile</option>
+              <option>Ecuador</option>
+              <option>Paraguay</option>
+              <option>Peru</option>
+              <option>Uruguay</option>
+            </select>
+          </fieldset>
+
+<!-- COMO NOS CONCIO -->
+          <fieldset>
+            <legend>Como nos concío</legend>
+              <input type="checkbox" name="referido" />Referido<br />
+              <input type="checkbox" name="fb" />Facebook<br />
+              <input type="checkbox" name="tw" /> Twitter<br />
+              <input type="checkbox" name="in" /> Instgram<br />
+              <input type="checkbox" name="ws" /> Whatsapp</p>
+          </fieldset>
+
+<!-- OTROS DATOS -->
+          <fieldset>
+            <legend>Otros datos</legend>
+            <table>
+              <td>
+                <p>Día de la semana favorito:
+                <select name="dia">
+                  <option>Día de la semana</option>
+                  <option value="">Lunes</option>
+                  <option value="Martes">Martes</option>
+                  <option value="Miercoles">Miércoles</option>
+                  <option value="Jueves">Jueves</option>
+                  <option value="Viernes">Viernes</option>
+                  <option value="Sábado">Sábado</option>
+                  <option value="Domingo">Domingo</option>
+                </select>
+                </p>
+              </td>
+
+              <td style="padding: 80px;"></td>
+
+              <td>
+                <p>Color favorito:
+                  <input type="color" name="" id="">
+                </p>
+              </td>
+
+              <td style="padding: 80px;"></td>
+
+              <td>
+                <p>Interesado en los siguientes temas: <br />
+                  <input type="checkbox" name="musica" /> Música<br />
+                  <input type="checkbox" name="deportes" /> Deportes<br />
+                  <input type="checkbox" name="cine" /> Cine<br />
+                  <input type="checkbox" name="libros" /> Libros<br />
+                  <input type="checkbox" name="ciencia" /> Ciencia</p>
+                </p>
+
+              </td>
+            </tr>
+
+            </table>
+
+            <p>Su opinión: <br />
+              <textarea name="comentario" rows="5" cols="130">Comentario: </textarea>
+
+          </fieldset>
+          <p><input type="submit" value="Enviar el formulario">
+            <input type="reset" value="borrar todo">
+          </p>
+        </form>
+
+  </fieldset>
+
+
+</body>
+</html>
